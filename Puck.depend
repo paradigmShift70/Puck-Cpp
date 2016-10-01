@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1475110251 source:c:\users\ron_p\desktop\puck-cpp\object.cpp
+	"Object.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	<algorithm>
+	<iterator>
+	<exception>
+
+1475111291 c:\users\ron_p\desktop\puck-cpp\object.hpp
+	<map>
+	<list>
+	<vector>
+	<string>
+	<exception>
+
+1475030013 source:c:\users\ron_p\desktop\puck-cpp\puckparser.cpp
+	"PuckParser.hpp"
+	"Object.hpp"
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<exception>
+
+1475013225 c:\users\ron_p\desktop\puck-cpp\puckparser.hpp
+	"PuckScanner.hpp"
+	"Object.hpp"
+
+1475110561 c:\users\ron_p\desktop\puck-cpp\puckscanner.hpp
+	"Scanner.hpp"
+	<string>
+
+1475015719 c:\users\ron_p\desktop\puck-cpp\scanner.hpp
+	<string>
+	<vector>
+
+1475017526 source:c:\users\ron_p\desktop\puck-cpp\puckscanner.cpp
+	"PuckScanner.hpp"
+	<stdio.h>
+
+1475015719 source:c:\users\ron_p\desktop\puck-cpp\scanner.cpp
+	"Scanner.hpp"
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+
+1475020281 source:c:\users\ron_p\desktop\puck-cpp\main.cpp
+	"PuckScanner.hpp"
+	"PuckParser.hpp"
+	"Object.hpp"
+	<string.h>
+	<stdio.h>
+

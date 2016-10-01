@@ -1,0 +1,41 @@
+# Project: Puck
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Object.o PuckParser.o PuckScanner.o Scanner.o
+LINKOBJ  = main.o Object.o PuckParser.o PuckScanner.o Scanner.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Puck.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Object.o: Object.cpp
+	$(CPP) -c Object.cpp -o Object.o $(CXXFLAGS)
+
+PuckParser.o: PuckParser.cpp
+	$(CPP) -c PuckParser.cpp -o PuckParser.o $(CXXFLAGS)
+
+PuckScanner.o: PuckScanner.cpp
+	$(CPP) -c PuckScanner.cpp -o PuckScanner.o $(CXXFLAGS)
+
+Scanner.o: Scanner.cpp
+	$(CPP) -c Scanner.cpp -o Scanner.o $(CXXFLAGS)
